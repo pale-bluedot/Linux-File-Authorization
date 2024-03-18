@@ -22,7 +22,7 @@ The following code demonstrates how I used Linux commands to determine the exist
 
 *Ref 1: Linux Command*
 
-#### 1a. Describe the permissions string
+#### a. Describe the permissions string
 The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows:
 - **1st character**: This character is either a `d` or hyphen (`-`) and indicates the file type. If it’s a `d`, it’s a directory. If it’s a hyphen (`-`), it’s a regular file.
 - **2nd-4th characters**: These characters indicate the read (`r`), write (`w`), and execute (`x`) permissions for the user. When one of these characters is a hyphen (`-`) instead, it indicates that this permission is not granted to the user.
@@ -57,3 +57,5 @@ The following code demonstrates how I used Linux commands to change the permissi
 
 *Ref 4: Linux Command*
 
+## Summary
+Linux commands were used to modify permissions of certain files and directories to match the level of authorization my organization wanted in the `projects` directory. I also modified permissions on hidden files to make sure it can only be read and not modified. A specific directory security permissions was modified to only be accessed by a specific user and not an entire group.
